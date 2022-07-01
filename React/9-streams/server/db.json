@@ -1,0 +1,33 @@
+{
+  "streams": [
+    {
+      "title": "Title1",
+      "description": "desc1",
+      "id": 1
+    },
+    {
+      "title": "Created by me",
+      "description": "By Ke'an",
+      "userId": "108114891112404378763",
+      "id": 2
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "Using history!",
+      "userId": "108114891112404378763",
+      "id": 3
+    },
+    {
+      "title": "Code Reuse",
+      "description": "Watch me reuse components 2!",
+      "userId": "108114891112404378763",
+      "id": 4
+    },
+    {
+      "title": "Final Form",
+      "description": "Using this with React Final Form!",
+      "userId": "108114891112404378763",
+      "id": 5
+    }
+  ]
+}
