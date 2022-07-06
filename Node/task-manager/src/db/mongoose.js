@@ -1,7 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false
-})
+const atlas = "mongodb+srv://mordecode:fr4nkier0@cluster0.9c0dhod.mongodb.net/?retryWrites=true&w=majority";
+const local = "mongodb://localhost:27017/task-manager-api-test";
+
+mongoose.connect(local);

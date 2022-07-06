@@ -15,7 +15,8 @@ router.post('/users', async (req, res) => {
         const token = await user.generateAuthToken()
         res.status(201).send({ user, token })
     } catch (e) {
-        res.status(400).send(e)
+        console.log(e.message)
+        res.status(400).send()
     }
 })
 
@@ -25,6 +26,7 @@ router.post('/users/login', async (req, res) => {
         const token = await user.generateAuthToken()
         res.send({ user, token })
     } catch (e) {
+        console.log(e.message)
         res.status(400).send()
     }
 })
@@ -38,6 +40,7 @@ router.post('/users/logout', auth, async (req, res) => {
 
         res.send()
     } catch (e) {
+        console.log(e.message)
         res.status(500).send()
     }
 })
@@ -48,6 +51,7 @@ router.post('/users/logoutAll', auth, async (req, res) => {
         await req.user.save()
         res.send()
     } catch (e) {
+        console.log(e.message)
         res.status(500).send()
     }
 })
